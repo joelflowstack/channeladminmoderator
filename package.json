@@ -1,0 +1,19 @@
+{
+  "name": "channel-poster-bot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Telegram bot that auto-posts niche-relevant daily content to any channel it's added to, inferred from the channel's own description.",
+  "main": "api/webhook.js",
+  "scripts": {
+    "setup-webhook": "node scripts/set-webhook.js"
+  },
+  "dependencies": {
+    "telegraf": "^4.16.3",
+    "firebase-admin": "^12.1.0",
+    "@google/generative-ai": "^0.21.0",
+    "node-fetch": "^2.7.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
