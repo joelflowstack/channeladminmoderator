@@ -27,7 +27,7 @@ module.exports = async (req, res) => {
         await bot.telegram.sendMessage(channel.chatId, post.text);
       }
 
-      await markPosted(channel.chatId);
+      await markPosted(channel.chatId, post.text);
       results.push({ chatId: channel.chatId, status: 'posted' });
     } catch (err) {
       console.error(`Failed to post to ${channel.chatId}:`, err);
